@@ -18,6 +18,4 @@
 
 @property (assign, nonatomic)BOOL firstTimeLogin;
 
-
-
 @end
