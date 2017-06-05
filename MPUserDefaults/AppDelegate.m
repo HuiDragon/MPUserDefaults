@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "TestDemo.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +16,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    TestDemo *t = [TestDemo standardUserDefaults];
+    if (!t.firstTimeLogin) {
+        t.firstTimeLogin = YES;
+        NSLog(@"first launch ...");
+    }else {
+        NSLog(@"aha ...");
+    }
+    
     return YES;
 }
 

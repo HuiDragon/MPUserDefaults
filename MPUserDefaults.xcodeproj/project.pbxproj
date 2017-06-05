@@ -13,7 +13,8 @@
 		3303E7191EE54A16008B1E84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3303E7171EE54A16008B1E84 /* Main.storyboard */; };
 		3303E71B1EE54A16008B1E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3303E71A1EE54A16008B1E84 /* Assets.xcassets */; };
 		3303E71E1EE54A16008B1E84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3303E71C1EE54A16008B1E84 /* LaunchScreen.storyboard */; };
-		3303E7271EE54A38008B1E84 /* MPUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 3303E7261EE54A38008B1E84 /* MPUserDefaults.m */; };
+		3303E72B1EE54B5B008B1E84 /* MPUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 3303E72A1EE54B5B008B1E84 /* MPUserDefaults.m */; };
+		3303E7311EE54B9F008B1E84 /* TestDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3303E7301EE54B9F008B1E84 /* TestDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +28,10 @@
 		3303E71A1EE54A16008B1E84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3303E71D1EE54A16008B1E84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3303E71F1EE54A16008B1E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3303E7251EE54A38008B1E84 /* MPUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPUserDefaults.h; sourceTree = "<group>"; };
-		3303E7261EE54A38008B1E84 /* MPUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPUserDefaults.m; sourceTree = "<group>"; };
+		3303E7291EE54B5B008B1E84 /* MPUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPUserDefaults.h; sourceTree = "<group>"; };
+		3303E72A1EE54B5B008B1E84 /* MPUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPUserDefaults.m; sourceTree = "<group>"; };
+		3303E72F1EE54B9F008B1E84 /* TestDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDemo.h; sourceTree = "<group>"; };
+		3303E7301EE54B9F008B1E84 /* TestDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +64,14 @@
 		3303E70D1EE54A16008B1E84 /* MPUserDefaults */ = {
 			isa = PBXGroup;
 			children = (
-				3303E7251EE54A38008B1E84 /* MPUserDefaults.h */,
-				3303E7261EE54A38008B1E84 /* MPUserDefaults.m */,
+				3303E7281EE54B5B008B1E84 /* MPUserDefaults */,
 				3303E7111EE54A16008B1E84 /* AppDelegate.h */,
 				3303E7121EE54A16008B1E84 /* AppDelegate.m */,
 				3303E7141EE54A16008B1E84 /* ViewController.h */,
 				3303E7151EE54A16008B1E84 /* ViewController.m */,
+				3303E72F1EE54B9F008B1E84 /* TestDemo.h */,
+				3303E7301EE54B9F008B1E84 /* TestDemo.m */,
 				3303E7171EE54A16008B1E84 /* Main.storyboard */,
-				3303E71A1EE54A16008B1E84 /* Assets.xcassets */,
-				3303E71C1EE54A16008B1E84 /* LaunchScreen.storyboard */,
-				3303E71F1EE54A16008B1E84 /* Info.plist */,
 				3303E70E1EE54A16008B1E84 /* Supporting Files */,
 			);
 			path = MPUserDefaults;
@@ -79,9 +80,21 @@
 		3303E70E1EE54A16008B1E84 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3303E71A1EE54A16008B1E84 /* Assets.xcassets */,
+				3303E71C1EE54A16008B1E84 /* LaunchScreen.storyboard */,
+				3303E71F1EE54A16008B1E84 /* Info.plist */,
 				3303E70F1EE54A16008B1E84 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3303E7281EE54B5B008B1E84 /* MPUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				3303E7291EE54B5B008B1E84 /* MPUserDefaults.h */,
+				3303E72A1EE54B5B008B1E84 /* MPUserDefaults.m */,
+			);
+			path = MPUserDefaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,8 +171,9 @@
 			files = (
 				3303E7161EE54A16008B1E84 /* ViewController.m in Sources */,
 				3303E7131EE54A16008B1E84 /* AppDelegate.m in Sources */,
+				3303E7311EE54B9F008B1E84 /* TestDemo.m in Sources */,
 				3303E7101EE54A16008B1E84 /* main.m in Sources */,
-				3303E7271EE54A38008B1E84 /* MPUserDefaults.m in Sources */,
+				3303E72B1EE54B5B008B1E84 /* MPUserDefaults.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +332,7 @@
 				3303E7241EE54A16008B1E84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

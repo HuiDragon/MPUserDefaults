@@ -23,7 +23,8 @@ static MPUserDefaults *_userDefaults = nil;
 + (instancetype)standardUserDefaults {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _userDefaults = [[MPUserDefaults alloc] init];
+        _userDefaults = [[self alloc] init];
+        [_userDefaults setupUserDefaults];
     });
     return _userDefaults;
 }
